@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+import { WebView } from 'react-native-webview';
 
 const App = () => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>안녕하세요.</Text>
+      <WebView source={{ uri: 'https://naver.com' }} />
     </SafeAreaView>
   );
 };
