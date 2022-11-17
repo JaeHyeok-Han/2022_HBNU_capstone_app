@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <WebView source={{ uri: 'https://naver.com' }} />
+      <WebView source={{ uri: 'http://172.17.75.53:3000/' }} />
     </SafeAreaView>
   );
 };
